@@ -4,15 +4,15 @@ updated_at=`TZ="Asia/Tokyo" date "+%Y/%m/%d %H:%M"`
 
 cat << HTML > index.html
 <!DOCTYPE html>
-<html lang="ja-JP">
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>PRESENTATIONS</title>
+  <title>Presentation listing of ${GITHUB_ACTOR}</title>
   <link rel="stylesheet" href="./style.css">
   <meta name="viewport" content="width=device-width">
 </head>
 <body>
-<h1>プレゼンテーションアーカイブ</h1>
+<h1>Presentation listing</h1>
 <ul>
   <li id="profile">
     <a href="https://github.com/${GITHUB_ACTOR}" target="_blank">
@@ -37,7 +37,7 @@ for file in `ls -r *.md | sed -e "s/.md//g"`; do
   <li>
     <a href="./$file.html" target="_blank">$title</a>
     <span>
-      [<a href="./$file.md" target="_blank">markdown</a>]
+      [<a href="./$file.md" target="_blank">Markdown</a>]
       [<a href="./$file.pdf" target="_blank">PDF</a>]
     </span>
   </li>
