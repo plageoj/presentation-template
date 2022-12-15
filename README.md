@@ -12,19 +12,33 @@ by [@plageoj](https://github.com/plageoj)
 
 A template GitHub repository to create and organize your presentation with [Marp](https://marp.app)
 
+[View demo slide for README.md](https://plageoj.github.io/presentation-template/README.html)
+
 ---
 
 ## How to use
 
 1. Fork this repository
-1. Clone or open web editor
-1. Add your markdown presentation
+1. Enable GitHub Pages according to the next section
+1. Clone the repository or open web editor
+1. Write your markdown presentation
 1. Commit and push
 1. You should see slide list at `https://your-name.github.io/repo-name/`
 
 ---
 
-## Making slide
+## Enabling GitHub Pages
+
+Enable GitHub Pages on [repository pages settings](./settings/pages) and choose **GitHub Actions** as source.
+
+![h:300](https://plageoj.github.io/presentation-template/image.png)
+
+This enables presentation slide listing.
+After you push the markdown file to remote repository, the listing will be automatically updated and released.
+
+---
+
+## Writing slide
 
 In the top section of the markdown, you have to include at least these two lines to enable presentation features and list the slide on the index page:
 
