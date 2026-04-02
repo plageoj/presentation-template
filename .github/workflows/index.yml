@@ -26,7 +26,7 @@ jobs:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
 
       - name: Convert Markdown into HTML and PDF
-        uses: hiono/marp-cli-action@d0035ad6865134c45c273d7f8bab1eb060173923 # v2
+        uses: KoharaKazuya/marp-cli-action@ea14535ddb906375885a7f4402165e31c7256635 # v2
         with:
           generate-pptx: false
 
